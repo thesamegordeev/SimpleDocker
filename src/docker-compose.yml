@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+
+  server:
+    build: ./server5
+
+  proxy:
+    build: ./server6
+    ports:
+      - 80:8080
